@@ -1,0 +1,55 @@
+Transferable:
+    trans1
+    trans2
+    to_string
+    from_string
+
+Field(Transferable):
+    decos[]
+
+Deco(Transferable)
+
+    
+GameObj(Sprite, Transferable):
+    pos
+    shape
+
+    size
+    update: update image
+    move
+
+Tanks(GameObj):
+    angle1
+    angle2
+    health
+    w
+    h
+
+Bullet(GameObj):
+    r
+
+Game(Transferable):
+    field
+    tanks
+    bullets
+    players
+    apply_event
+    handle_event
+
+GameEvent(Transferable):
+    round
+
+EObjMove(GameEvent):
+EObjVanish(GameEvent):
+ETankShoot(GameEvent):
+
+
+Player(Transferable):
+    viewport
+    tank
+    react
+    score
+
+Render:
+    viewport
+    game

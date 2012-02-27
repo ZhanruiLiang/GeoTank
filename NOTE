@@ -1,0 +1,2 @@
+pygame.draw.line(Surface, color, start_pos, end_pos, width=1): return Rect
+pygame.draw.circle(Surface, color, pos, radius, width=0): return Rect
